@@ -1,0 +1,12 @@
+button {
+  background-color: transparent;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.enabled:hover {
+  background-color: orangered;
+  color: white;
+  transition: 100ms;
+}
+

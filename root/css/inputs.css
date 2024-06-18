@@ -1,0 +1,12 @@
+input[type="text"] {
+  width: 280px;
+  height: 30px;
+  padding: 0 5px;
+  border-radius: 5px;
+  border-width: 1px;
+  font-size: 18px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
