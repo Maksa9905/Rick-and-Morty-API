@@ -2,7 +2,6 @@ let searchForm = document.getElementById("search-form");
 let speciesInput = document.getElementById("search-input");
 let charactersList = document.querySelector(".characters-list");
 let pagination = document.querySelector(".pagination");
-
 let currentPage = 1;
 
 function redering(characters) {
@@ -90,7 +89,7 @@ function serializeForm(formNode) {
 searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
   let searchingParams = serializeForm(searchForm);
-
+  currentPage = 1;
   dataFetching(
     `https://rickandmortyapi.com/api/character/?${
       searchingParams.name ? `name=${searchingParams.name}` : ""
