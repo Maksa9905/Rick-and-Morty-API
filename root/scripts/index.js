@@ -65,6 +65,7 @@ function dataFetching(url) {
     })
     .catch((error) => {
       charactersList.innerHTML = `<h2>${error}</h2>`;
+      pagination.innerHTML = ``;
     });
 }
 
